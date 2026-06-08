@@ -47,7 +47,7 @@ cd /usr/share/nginx/html &>>$LOGFILE
 unzip /tmp/frontend.zip &>>$LOGFILE
 VALIDATE $? "Extracting the frontend app"
 
-cp /home/ec2-user/3.4.expense-shellscript/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/3.12.expense-app-infra-standard-shellscript/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copied expense reverse proxy conf"
 
 systemctl restart nginx &>>$LOGFILE

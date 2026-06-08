@@ -66,7 +66,7 @@ VALIDATE $? "Extracked backend code"
 npm install &>>$LOGFILE
 VALIDATE $? "Installing nodejs dependencies"
 
-cp /home/ec2-user/3.4.expense-shellscript/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/3.12.expense-app-infra-standard-shellscript/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "Copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
